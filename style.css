@@ -170,3 +170,7 @@ a {
         text-align: center;
     }
 }
+
+body {
+    font-family: "Playpen Sans", cursive;
+}
