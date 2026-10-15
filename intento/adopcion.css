@@ -1,0 +1,84 @@
+.seccion-adopcion {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.titulo-seccion {
+    margin-bottom: 30px;
+}
+
+.cuadricula-animales {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-animal {
+    overflow: hidden;
+    border: 1px solid #e7eae5;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+.imagen-animal {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.detalles-animal {
+    padding: 10px 20px 20px;
+}
+
+.detalles-animal h2 {
+    color: #234936;
+    font-size: 24px;
+}
+
+.descripcion-animal {
+    margin-bottom: 20px;
+    color: #69736c;
+    font-size: 14px;
+}
+
+.seccion-pasos {
+    padding: 50px 0;
+    background: #f7f5ef;
+}
+
+.cuadricula-pasos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.tarjeta-paso {
+    min-height: 150px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.tarjeta-paso h3 {
+    font-size: 20px;
+}
+
+.tarjeta-paso p {
+    color: #69736c;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .cuadricula-animales {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cuadricula-animales,
+    .cuadricula-pasos {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    color: #24322a;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 7%;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icono-marca {
+    width: 42px;
+    height: 42px;
+}
+
+.nombre-marca {
+    color: #234936;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.nombre-marca span {
+    color: #3c7254;
+}
+
+.navegacion {
+    display: flex;
+    gap: 30px;
+}
+
+.navegacion a {
+    color: #4d5851;
+    font-size: 14px;
+}
+
+.navegacion a:hover,
+.navegacion a.activo {
+    color: #3c7254;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-principal {
+    color: #234936;
+    background: #e3eddc;
+}
+
+.boton-oscuro {
+    color: #ffffff;
+    background: #234936;
+}
+
+.boton-oscuro:hover {
+    background: #3c7254;
+}
+
+.enlace-texto {
+    color: #3c7254;
+    font-size: 14px;
+}
+
+.enlace-claro {
+    color: #ffffff;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    color: #3c7254;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subtitulo-claro {
+    color: #e0ebdb;
+}
+
+.portada-pagina {
+    padding: 70px 10%;
+    color: #ffffff;
+    background: linear-gradient(rgba(21, 37, 29, 0.75), rgba(21, 37, 29, 0.75)), url("imagenes/Daisy_perro.jpg") center 45% / cover;
+}
+
+.portada-pagina h1 {
+    font-size: 48px;
+}
+
+.portada-pagina h1 span {
+    color: #c5d9b4;
+}
+
+.portada-pagina p {
+    max-width: 560px;
+    line-height: 1.6;
+}
+
+.titulo-seccion h2 {
+    font-size: 36px;
+}
+
+.titulo-seccion h2 span {
+    color: #3c7254;
+}
+
+.pie-pagina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background: #f8f8f5;
+}
+
+.marca-pie .icono-marca {
+    width: 34px;
+    height: 34px;
+}
+
+.marca-pie .nombre-marca {
+    font-size: 17px;
+}
+
+.pie-pagina p,
+.texto-pie {
+    color: #69736c;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .encabezado {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navegacion {
+        gap: 20px;
+    }
+
+    .pie-pagina {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

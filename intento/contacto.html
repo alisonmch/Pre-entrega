@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Huellas de Amor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <a class="marca" href="index.html">
+            <img src="imagenes/huella verde.png" alt="" class="icono-marca">
+            <span class="nombre-marca">Huellas <span>de Amor</span></span>
+        </a>
+
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="adopcion.html">Adopciones</a>
+            <a class="activo" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portada-pagina">
+            <span class="subtitulo subtitulo-claro">Contacto</span>
+
+            <h1>Una pregunta puede<br>ser el comienzo de <span>todo.</span></h1>
+
+            <p>¿Quieres saber más sobre Daisy o el proceso de adopción? <br /> Nos encantará leerte.</p>
+        </section>
+
+        <section class="seccion-contacto contenedor">
+            <div class="introduccion-contacto">
+                <span class="subtitulo">Estamos para ayudarte</span>
+
+                <h2>Hablemos de<br><span>nuevos comienzos</span></h2>
+
+                <p>Completa el formulario y cuéntanos qué tienes en mente. Si tu consulta es sobre una adopción, incluye el nombre del animalito.</p>
+                
+            </div>
+
+            <form class="formulario-contacto" action="https://formspree.io/f/xgaopaao" method="post">
+
+                <label for="nombre">Tu nombre</label>
+                <input id="nombre" name="name" type="text" placeholder="¿Cómo te llamas?" autocomplete="name" required>
+
+                <label for="correo">Tu correo electrónico</label>
+                <input id="correo" name="email" type="email" placeholder="tunombre@correo.com" autocomplete="email" required>
+
+                <label for="asunto">¿En qué podemos ayudarte?</label>
+                <select id="asunto" name="subject" required>
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option>Quiero adoptar a Daisy</option>
+                    <option>Consulta sobre adopciones</option>
+                    <option>Quiero ayudar</option>
+                    <option>Otra consulta</option>
+                </select>
+
+                <label for="mensaje">Tu mensaje</label>
+                <textarea id="mensaje" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button class="boton boton-oscuro boton-formulario" type="submit">
+                    Enviar mensaje <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <a class="marca marca-pie" href="index.html">
+            <img src="imagenes/huella verde.png" alt="" class="icono-marca">
+            <span class="nombre-marca">Huellas <span>de Amor</span></span>
+        </a>
+
+        <p>Adopta · Cuida · Cambia una vida</p>
+
+        <span class="texto-pie">Hecho con amor y muchas huellitas 
+            <i class="fa-solid fa-heart"></i>
+        </span>
+    </footer>
+
+</body>
+</html>
